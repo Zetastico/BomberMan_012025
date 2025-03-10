@@ -1,0 +1,16 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Lista de cambios no controlados predeterminada",
+			"files": [
+				"C:/Users/magne/Documents/Unreal Projects/BomberMan_012025/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/magne/Documents/Unreal Projects/BomberMan_012025/Content/ThirdPerson/Blueprints/BP_Moneda.uasset",
+				"C:/Users/magne/Documents/Unreal Projects/BomberMan_012025/Content/ThirdPerson/Blueprints/BP_SpawnMonedas.uasset",
+				"C:/Users/magne/Documents/Unreal Projects/BomberMan_012025/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/magne/Documents/Unreal Projects/BomberMan_012025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/95/XLTQJ979LDCRQ7JKMUH0QI.uasset"
+			]
+		}
+	]
+}
