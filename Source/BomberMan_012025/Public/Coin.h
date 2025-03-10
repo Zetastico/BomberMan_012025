@@ -31,10 +31,12 @@ private:
 
 	//Esto hace que la variable sea visible en el editor
 	UPROPERTY(EditAnywhere)
-	
+
+	//La velocidad de rotación, puede modificarse igual en los blueprints
 	float RotationSpeed = 100.0f;
 
-
+	//Función que se llama cuando el objeto colisiona con otro
+	//En desarrollo
 	UFUNCTION()
 	void OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 		UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,

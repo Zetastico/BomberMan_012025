@@ -21,12 +21,18 @@ protected:
 
 
 public:
+	//El UPORPERTY nos permite modificar las variables en el editor
+	//Son muy utiles para modificar variables sin tener que recompilar el proyecto
 	UPROPERTY(EditAnywhere, Category = "Spawn")
+	//TSubclassOf nos permite seleccionar una clase de la cual se creara un objeto
 	TSubclassOf<class ACoin> CoinClass;
 
+	//Cantidad de monedas a spawnear 
+	//Se puede modificar en el editor y aqui
 	UPROPERTY(EditAnywhere, Category = "Spawn")
 	int32 NumeroDeMonedas = 5;
 
+	//Distancia entre monedas
 	UPROPERTY(EditAnywhere, Category = "Spawn")
 	float DistanciaEntreMonedas = 100.0f;
 };

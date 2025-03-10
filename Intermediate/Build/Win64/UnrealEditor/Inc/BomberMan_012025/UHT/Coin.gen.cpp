@@ -35,7 +35,13 @@ struct Z_Construct_UFunction_ACoin_OnOverlap_Statics
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Funci\xef\xbf\xbdn que se llama cuando el objeto colisiona con otro\n//En desarrollo\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Coin.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Funci\xef\xbf\xbdn que se llama cuando el objeto colisiona con otro\nEn desarrollo" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverlappedComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -137,11 +143,11 @@ struct Z_Construct_UClass_ACoin_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RotationSpeed_MetaData[] = {
 		{ "Category", "Coin" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//Esto hace que la variable sea visible en el editor\n" },
+		{ "Comment", "//Esto hace que la variable sea visible en el editor\n//La velocidad de rotaci\xef\xbf\xbdn, puede modificarse igual en los blueprints\n" },
 #endif
 		{ "ModuleRelativePath", "Public/Coin.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Esto hace que la variable sea visible en el editor" },
+		{ "ToolTip", "Esto hace que la variable sea visible en el editor\nLa velocidad de rotaci\xef\xbf\xbdn, puede modificarse igual en los blueprints" },
 #endif
 	};
 #endif // WITH_METADATA
@@ -150,7 +156,7 @@ struct Z_Construct_UClass_ACoin_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ACoin_OnOverlap, "OnOverlap" }, // 3813119802
+		{ &Z_Construct_UFunction_ACoin_OnOverlap, "OnOverlap" }, // 1637103715
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -205,10 +211,10 @@ ACoin::~ACoin() {}
 struct Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_Coin_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACoin, ACoin::StaticClass, TEXT("ACoin"), &Z_Registration_Info_UClass_ACoin, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACoin), 3631630873U) },
+		{ Z_Construct_UClass_ACoin, ACoin::StaticClass, TEXT("ACoin"), &Z_Registration_Info_UClass_ACoin, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACoin), 2726641151U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_Coin_h_473202423(TEXT("/Script/BomberMan_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_Coin_h_3598146144(TEXT("/Script/BomberMan_012025"),
 	Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_Coin_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_Coin_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

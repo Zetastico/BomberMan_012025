@@ -36,15 +36,33 @@ struct Z_Construct_UClass_ASpawnDeMonedas_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CoinClass_MetaData[] = {
 		{ "Category", "Spawn" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//El UPORPERTY nos permite modificar las variables en el editor\n//Son muy utiles para modificar variables sin tener que recompilar el proyecto\n//TSubclassOf nos permite seleccionar una clase de la cual se creara un objeto\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SpawnDeMonedas.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "El UPORPERTY nos permite modificar las variables en el editor\nSon muy utiles para modificar variables sin tener que recompilar el proyecto\nTSubclassOf nos permite seleccionar una clase de la cual se creara un objeto" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NumeroDeMonedas_MetaData[] = {
 		{ "Category", "Spawn" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Cantidad de monedas a spawnear \n//Se puede modificar en el editor y aqui\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SpawnDeMonedas.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Cantidad de monedas a spawnear\nSe puede modificar en el editor y aqui" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DistanciaEntreMonedas_MetaData[] = {
 		{ "Category", "Spawn" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Distancia entre monedas\n" },
+#endif
 		{ "ModuleRelativePath", "Public/SpawnDeMonedas.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Distancia entre monedas" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_CoinClass;
@@ -106,10 +124,10 @@ ASpawnDeMonedas::~ASpawnDeMonedas() {}
 struct Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_SpawnDeMonedas_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpawnDeMonedas, ASpawnDeMonedas::StaticClass, TEXT("ASpawnDeMonedas"), &Z_Registration_Info_UClass_ASpawnDeMonedas, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawnDeMonedas), 2956015675U) },
+		{ Z_Construct_UClass_ASpawnDeMonedas, ASpawnDeMonedas::StaticClass, TEXT("ASpawnDeMonedas"), &Z_Registration_Info_UClass_ASpawnDeMonedas, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpawnDeMonedas), 265362026U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_SpawnDeMonedas_h_824407082(TEXT("/Script/BomberMan_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_SpawnDeMonedas_h_978362355(TEXT("/Script/BomberMan_012025"),
 	Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_SpawnDeMonedas_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Public_SpawnDeMonedas_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
